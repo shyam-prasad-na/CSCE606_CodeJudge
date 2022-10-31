@@ -27,4 +27,9 @@ class ApplicationController < ActionController::Base
     cookies[:color_mode] = { value: params[:color_mode] }
     redirect_to problems_path, notice: "Color Mode set to #{params[:color_mode].capitalize}"
   end
+
+  def color_mode_test
+    cookies[:color_mode] = { value: params[:color_mode] }
+    redirect_to problems_path, notice: "Color Mode set to #{params[:color_mode].capitalize}"
+  end
 end
