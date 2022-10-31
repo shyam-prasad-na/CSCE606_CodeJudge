@@ -109,8 +109,8 @@ services:
       - '28080:28080'
     volumes:
       - '.:/code'
-    env_file:
-      - '.env'
+#    env_file:
+#      - '.env'
 
 # Declare the volumes that our application uses.
 volumes:
